@@ -1,0 +1,11 @@
+Host 172.17.*
+  User <USER>
+  StrictHostKeyChecking no
+
+Host 192.168.*
+  User <USER>
+  StrictHostKeyChecking no
+
+Host 10.*
+  User <USER>
+  StrictHostKeyChecking no

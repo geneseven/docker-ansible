@@ -1,0 +1,16 @@
+---
+- name: tmux
+  hosts: <HOSTNAME>
+  remote_user: <USER>
+  vars:
+    keys:
+      - tmux
+      - tmux-pkg
+  pre_tasks:
+    - pillar: {}
+      tags: always
+    - debug: var=context
+      tags: always
+
+  roles:
+    - tmux
